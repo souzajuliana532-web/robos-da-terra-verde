@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Grande Missão dos Robôs da Terra Verde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🤖 A Grande Missão dos Robôs da Terra Verde 🌾</h1>
+                <p class="subtitle">Uma história de aventura agrícola em quadrinhos</p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn active" data-scene="0">🌅 Cena 1</button>
+            <button class="nav-btn" data-scene="1">🤖 Cena 2</button>
+            <button class="nav-btn" data-scene="2">🍎 Cena 3</button>
+            <button class="nav-btn" data-scene="3">🚁 Cena 4</button>
+            <button class="nav-btn" data-scene="4">✨ Cena 5</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="scene-container">
+                <!-- Scene 1: O Amanhecer -->
+                <section class="scene active" id="scene-0">
+                    <div class="scene-title">CENA 1: O COMEÇO DO DIA</div>
+                    <div class="scene-visual">
+                        <div class="sky-gradient"></div>
+                        <div class="sun" id="sun-1"></div>
+                        <div class="farm-background">
+                            <div class="grass"></div>
+                            <div class="farmer">
+                                <div class="farmer-head"></div>
+                                <div class="farmer-body"></div>
+                                <div class="farmer-arm-left"></div>
+                                <div class="farmer-arm-right"></div>
+                                <div class="farmer-leg"></div>
+                            </div>
+                        </div>
+                        <div class="robots-row">
+                            <div class="robot tico-robot"></div>
+                            <div class="robot brazo-robot"></div>
+                            <div class="robot drone-robot"></div>
+                        </div>
+                    </div>
+                    <div class="scene-text">
+                        <p><strong>NARRAÇÃO:</strong> TUDO ERA CALMO NA FAZENDA TERRA VERDE. O FAZENDEIRO BETO GANHOU NOVOS AJUDANTES MUITO ESPECIAIS: OS ROBÔS AGRICULTORES.</p>
+                        <p class="sound-effect">🔊 BIP... BLIP!</p>
+                    </div>
+                    <button class="play-btn" id="play-scene-0">▶ Reproduzir Cena</button>
+                </section>
+
+                <!-- Scene 2: Robô Tico -->
+                <section class="scene" id="scene-1">
+                    <div class="scene-title">CENA 2: O ROBÔ TICO EM AÇÃO</div>
+                    <div class="scene-visual">
+                        <div class="sky-gradient"></div>
+                        <div class="farm-background">
+                            <div class="plants-row">
+                                <div class="plant good"></div>
+                                <div class="plant good"></div>
+                                <div class="plant weed"></div>
+                                <div class="plant good"></div>
+                                <div class="plant weed"></div>
+                                <div class="plant good"></div>
+                            </div>
+                        </div>
+                        <div class="tico-action">
+                            <div class="robot-tico-large"></div>
+                            <div class="pincer" id="pincer-2"></div>
+                        </div>
+                    </div>
+                    <div class="scene-text">
+                        <p><strong>NARRAÇÃO:</strong> O ROBÔ TICO ANDA DEVAGAR ENTRE AS PLANTAS. ELE USA SUAS PINÇAS PARA RETIRAR AS PLANTAS RUINS QUE ROUBAM A ÁGUA DOS TOMATES.</p>
+                        <p class="sound-effect">🔊 VRUM... VRUM... PLOC!</p>
+                    </div>
+                    <button class="play-btn" id="play-scene-1">▶ Reproduzir Cena</button>
+                </section>
+
+                <!-- Scene 3: Colheita de Maçãs -->
+                <section class="scene" id="scene-2">
+                    <div class="scene-title">CENA 3: A COLHEITA DE MAÇÃS</div>
+                    <div class="scene-visual">
+                        <div class="sky-gradient"></div>
+                        <div class="farm-background">
+                            <div class="apple-tree"></div>
+                        </div>
+                        <div class="mechanical-arm-container">
+                            <div class="mechanical-arm" id="mech-arm-3">
+                                <div class="arm-segment-1"></div>
+                                <div class="arm-segment-2"></div>
+                                <div class="arm-hand"></div>
+                            </div>
+                            <div class="apple" id="apple-3"></div>
+                            <div class="basket"></div>
+                        </div>
+                    </div>
+                    <div class="scene-text">
+                        <p><strong>NARRAÇÃO:</strong> O ROBÔ BRAÇO-MECÂNICO ESTICA SEU BRAÇO LONGO. ELE SEGURA A MAÇÃ VERMELHA COM MUITO CUIDADO PARA NÃO AMASSAR.</p>
+                        <p class="sound-effect">🔊 ZIIIP... FOF!</p>
+                    </div>
+                    <button class="play-btn" id="play-scene-2">▶ Reproduzir Cena</button>
+                </section>
+
+                <!-- Scene 4: Drone Zeca -->
+                <section class="scene" id="scene-3">
+                    <div class="scene-title">CENA 4: O VÔO DO DRONE ZECA</div>
+                    <div class="scene-visual">
+                        <div class="sky-gradient" style="background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%);"></div>
+                        <div class="clouds">
+                            <div class="cloud cloud-1"></div>
+                            <div class="cloud cloud-2"></div>
+                            <div class="cloud cloud-3"></div>
+                        </div>
+                        <div class="drone-flight" id="drone-4">
+                            <div class="drone-zeca">
+                                <div class="drone-body"></div>
+                                <div class="propeller prop-1"></div>
+                                <div class="propeller prop-2"></div>
+                                <div class="propeller prop-3"></div>
+                                <div class="propeller prop-4"></div>
+                                <div class="camera"></div>
+                            </div>
+                        </div>
+                        <div class="farm-view-from-sky">
+                            <div class="field field-1"></div>
+                            <div class="field field-2"></div>
+                            <div class="field field-3"></div>
+                        </div>
+                    </div>
+                    <div class="scene-text">
+                        <p><strong>NARRAÇÃO:</strong> O DRONE ZECA VOA BEM ALTO, ACIMA DAS NUVENS. LÁ DE CIMA, ELE TIRA FOTOS DE TODA A FAZENDA PARA VER SE AS PLANTAS ESTÃO COM SEDE.</p>
+                        <p class="sound-effect">🔊 ZUUUM... ZUUUM... CLIQUE!</p>
+                    </div>
+                    <button class="play-btn" id="play-scene-3">▶ Reproduzir Cena</button>
+                </section>
+
+                <!-- Scene 5: Missão Cumprida -->
+                <section class="scene" id="scene-4">
+                    <div class="scene-title">CENA 5: MISSÃO CUMPRIDA</div>
+                    <div class="scene-visual">
+                        <div class="sunset-gradient"></div>
+                        <div class="sun" id="sun-5" style="bottom: 20%; left: 15%;"></div>
+                        <div class="farm-background">
+                            <div class="grass-final"></div>
+                        </div>
+                        <div class="farmer-final">
+                            <div class="farmer-head"></div>
+                            <div class="farmer-body"></div>
+                            <div class="farmer-arm-wave"></div>
+                            <div class="farmer-arm-static"></div>
+                        </div>
+                        <div class="robots-charging">
+                            <div class="robot-charge tico"></div>
+                            <div class="robot-charge brazo"></div>
+                            <div class="robot-charge drone"></div>
+                            <div class="charging-station"></div>
+                        </div>
+                    </div>
+                    <div class="scene-text">
+                        <p><strong>NARRAÇÃO:</strong> NO FINAL DO DIA, A FAZENDA ESTAVA LIMPA E ORGANIZADA. OS ROBÔS VOLTAM PARA SUAS CASINHAS PARA RECARREGAR AS BATERIAS. A FAZENDA ESTÁ FELIZ!</p>
+                        <p class="sound-effect">🔊 CHUÁ... CHUÁ... PIM... POU...</p>
+                    </div>
+                    <button class="play-btn" id="play-scene-4">▶ Reproduzir Cena</button>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🎨 Uma história incrível sobre os robôs da Fazenda Terra Verde</p>
+            <p>🌍 Desenvolvido com HTML, CSS e JavaScript puro | Sem dependências externas!</p>
+            <p>✨ Use as setas do teclado (← →) para navegar entre as cenas</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
